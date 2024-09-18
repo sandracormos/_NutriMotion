@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="progressBarColor">#6FFFE9</color>
+    <color name="button">#34EDE0</color>
+    <color name="background">#3A4F6A</color>
+    <color name="text">#8BA2C1</color>
+    <color name="input">#0B132A</color>
+    <color name="titlu">#586A7F</color>
+    <color name="inputText">#77DDC9C9</color>
+    <color name="tealColor">#008080</color>
+</resources>

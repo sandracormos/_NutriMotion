@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Navigation_Menu">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3A4F6A"
+        android:backgroundTint="#3A4F6A"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        tools:context=".Navigation_Menu">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="603dp">
+
+            <ImageButton
+                android:id="@+id/water_intake_button"
+                android:layout_width="123dp"
+                android:layout_height="102dp"
+                android:layout_marginTop="160dp"
+
+                android:layout_marginEnd="48dp"
+                android:backgroundTint="#00FFFFFF"
+                android:checked="false"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/water_intake" />
+
+            <ImageButton
+                android:id="@+id/journal_button"
+                android:layout_width="108dp"
+                android:layout_height="91dp"
+
+                android:layout_marginBottom="52dp"
+                android:backgroundTint="#00FFFFFF"
+                android:checked="false"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/gps_button"
+                app:layout_constraintEnd_toStartOf="@+id/bmi_button"
+                app:layout_constraintHorizontal_bias="0.305"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/receipe_ai_icon" />
+
+            <ImageButton
+                android:id="@+id/settings_button"
+                android:layout_width="59dp"
+                android:layout_height="47dp"
+
+                android:backgroundTint="#00FFFFFF"
+                android:checked="false"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/water_intake_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.963"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.828"
+                app:srcCompat="@drawable/settings_icon" />
+
+            <ImageButton
+                android:id="@+id/bmi_button"
+                android:layout_width="109dp"
+                android:layout_height="91dp"
+                android:layout_marginTop="48dp"
+
+                android:layout_marginEnd="60dp"
+                android:backgroundTint="#00FFFFFF"
+                android:checked="false"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/water_intake_button"
+                app:srcCompat="@drawable/weight_loss_icon" />
+
+            <ImageButton
+                android:id="@+id/gps_button"
+                android:layout_width="121dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="40dp"
+
+                android:layout_marginBottom="44dp"
+                android:backgroundTint="#00FFFFFF"
+                android:checked="false"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/progress_button"
+                app:layout_constraintHorizontal_bias="0.024"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/gps_icon_bun" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Fasting Tracker"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/journal_button"
+                app:layout_constraintEnd_toStartOf="@+id/textView15"
+                app:layout_constraintHorizontal_bias="0.341"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fasting_tracker_button"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="72dp"
+                android:text="Water Intake"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/water_intake_button" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:text="Journal"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/textView21"
+                app:layout_constraintHorizontal_bias="0.347"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/journal_button" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:layout_marginEnd="72dp"
+                android:text="BMI Calculator"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmi_button" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+
+                android:layout_marginTop="8dp"
+                android:text="GPS"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gps_button" />
+
+            <ImageButton
+                android:id="@+id/fasting_tracker_button"
+                android:layout_width="119dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="156dp"
+                android:backgroundTint="#00FFFFFF"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/journal_button"
+                app:layout_constraintEnd_toStartOf="@+id/water_intake_button"
+                app:layout_constraintHorizontal_bias="0.336"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/intermitent_fasting_icon" />
+
+            <ImageButton
+                android:id="@+id/progress_button"
+                android:layout_width="117dp"
+                android:layout_height="112dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginBottom="36dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmi_button"
+                app:layout_constraintVertical_bias="0.978"
+                app:srcCompat="@drawable/progress" />
+
+            <TextView
+                android:id="@+id/Progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.648"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/progress_button"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@color/input"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:background="@color/input"
+        android:gravity="center"
+        android:text="@string/nutrimotion"
+        android:textColor="@color/button"
+
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background color -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F23A506B"/>
+
+    <!-- ConstraintLayout for your content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".security.RegisterActivity">
+
+        <!-- Arrow to go back -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="Back Arrow"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+
+        <!-- Title Text -->
+        <EditText
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:text="Welcome to NutriMotion!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="960dp"
+            android:layout_height="514dp"
+            android:alpha="0.3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/register_background_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.274"
+            app:layout_constraintStart_toStartOf="@+id/inputConfirmPassword"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/registerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="313dp"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/inputFirstName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/inputFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:allowUndo="false"
+            android:autoText="false"
+            android:background="@drawable/round_corner"
+            android:contextClickable="true"
+            android:ems="10"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:foregroundTint="@color/white"
+            android:hint=" Enter First Name"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/registerText" />
+
+        <EditText
+            android:id="@+id/inputLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_corner"
+            android:ems="10"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:hint=" Enter Last Name"
+            android:maxLength="10"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/inputPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputFirstName"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_corner"
+            android:ems="10"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:hint=" Enter Password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/inputConfirmPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLastName"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/inputConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_corner"
+            android:ems="10"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:hint=" Confirm Password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_corner"
+            android:ems="10"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:hint=" Enter Email Address"
+            android:inputType="textEmailAddress"
+            android:maxLength="35"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputConfirmPassword"
+            tools:ignore="MissingConstraints" />
+
+
+        <!-- it's not working: rounded corners-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/rounded_corner_button"
+            android:fontFamily="@font/abhaya_libre_semibold"
+            android:text="Register"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

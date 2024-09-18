@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="cursive"
+        android:text="@string/welcome"
+        android:textSize="60sp"
+        android:textStyle="bold|normal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        android:fontFamily="cursive"
+        android:textSize="40sp"
+        android:textStyle="bold|normal"/>
+
+    <ImageView
+        android:id="@+id/nutri_motion_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nutri_motion_badge"
+        app:srcCompat="@drawable/nutri_motion_transparent_background" />
+
+    <Button
+        android:id="@+id/btn_login_welcome_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/tealColor"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_register_welcome_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/tealColor"
+        android:textColor="@android:color/white"
+        android:text="@string/register"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

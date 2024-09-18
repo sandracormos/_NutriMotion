@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F23A506B"
+    tools:context=".WaterIntakeActivity">
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:textColor="#6FFFE9"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="490dp"
+        android:layout_height="592dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="2dp"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/water_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+
+    <ImageView
+        android:id="@+id/raindrop3"
+        android:layout_width="56dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/raindrop"
+        app:layout_constraintBottom_toTopOf="@+id/ml"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/raindrop2"
+        android:layout_width="68dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/raindrop"
+        app:layout_constraintBottom_toTopOf="@+id/ml2"
+        app:layout_constraintEnd_toStartOf="@+id/raindrop"
+        app:layout_constraintStart_toEndOf="@+id/raindrop3" />
+
+
+    <View
+        android:id="@+id/progressLine"
+        android:layout_width="300dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="10dp"
+        android:background="#5FC3F7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/raindrop"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/raindrop"
+        app:layout_constraintBottom_toTopOf="@+id/ml3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/ml3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="500 ml"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/glass_of_water_500ml"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/ml2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="200 ml"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/glass_of_water_200ml"
+        app:layout_constraintEnd_toStartOf="@+id/ml3"
+        app:layout_constraintStart_toEndOf="@+id/ml" />
+
+    <ImageView
+        android:id="@+id/glass_of_water_500ml"
+        android:layout_width="158dp"
+        android:layout_height="198dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/glass_of_water"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/glass_of_water_200ml"
+        android:layout_width="114dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/glass_of_water"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glass_of_water_500ml"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/glass_of_water_100ml"
+        android:layout_width="92dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/glass_of_water"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glass_of_water_200ml"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="100 ml"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/glass_of_water_100ml"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="253dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="Your daily water intake"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="-100ml"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/raindrop3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="-200ml"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/raindrop2"
+        app:layout_constraintEnd_toStartOf="@+id/ml3"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="-500ml"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/raindrop"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

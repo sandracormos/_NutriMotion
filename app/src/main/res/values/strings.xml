@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">NutriMotion</string>
+    <string name="google_map_key">key</string>
+    <string name="your_result">Your Result</string>
+    <string name="calculate">Calculate</string>
+    <string name="_23">23</string>
+    <string name="your_height_in_cm">"  Your Height in Cm:"</string>
+    <string name="your_weight_in_kg">"  Your Weight in Kg:"</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="weight_status">   Weight Status</string>
+    <string name="weight_description">"Enter your weight in kilograms"</string>
+    <string name="height_description">"Enter your height in centimeters"</string>
+    <string name="textview">TextView</string>
+    <string name="nutrimotion">NutriMotion</string>
+    <string name="lose_weight">Lose Weight</string>
+    <string name="select_your_goal">Select your goal</string>
+    <string name="weight_loss">Weight Loss</string>
+    <string name="muscle_gain_bodybuilding">Muscle Gain (Bodybuilding)</string>
+    <string name="general_fitness_and_wellness">General Fitness and Wellness</string>
+    <string name="enter_your_age">"  Enter your Age:"</string>
+    <string name="gender">"  Enter your Gender:"</string>
+    <string name="welcome_to_nutrimotion">Welcome to NutriMotion!</string>
+    <string name="login">Login</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="register">Register</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="logout">Logout</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="to">to</string>
+    <string name="or">Or</string>
+    <string name="nutri_motion_badge">NutriMotion Badge</string>
+    <string name="client_id"> 306766561926-oh6r3mcpbabu5ssgsurmm7jqu8pin0aq.apps.googleusercontent.com</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string-array name="Spinner_items">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+
+    <string-array name="Spinner_items_measurements">
+        <item>100 g</item>
+        <item>1 g</item>
+        <item>100 ml</item>
+        <item>1 ml</item>
+    </string-array>
+
+</resources>
+
+    <!--
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=37.7749,-122.4194&radius=5000&types=restaurant&sensor=true&key=AIzaSyA0zhzFzYvv11EFGRythxuAayi6rrybSno
+-->

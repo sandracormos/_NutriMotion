@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NutriMotion"
+        tools:targetApi="34">
+        <activity
+            android:name=".security.LoginActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".NearbyGymsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterIntakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntermittentFastingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fortschrittsfotos"
+            android:exported="false" />
+        <activity
+            android:name=".ScanMeal"
+            android:exported="false" />
+        <activity
+            android:name=".KcalMenu"
+            android:exported="false" />
+        <activity
+            android:name=".SetGoalActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".BMICalculator"
+            android:exported="false" />
+        <activity
+            android:name=".security.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Navigation_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".security.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".security.WelcomeScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="key" />
+    </application>
+
+</manifest>
